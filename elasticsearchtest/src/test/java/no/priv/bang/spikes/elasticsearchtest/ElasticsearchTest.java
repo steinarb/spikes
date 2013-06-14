@@ -18,5 +18,15 @@ public class ElasticsearchTest {
 		// on shutdown
 		node.close();	
 	}
+	
+	@Test
+	public void testNodeWithClusterName() {
+		// on startup
+		Node node = nodeBuilder().clusterName("myownclustername").node();
+		Client client = node.client();
+
+		// on shutdown
+		node.close();	
+	}
 
 }
