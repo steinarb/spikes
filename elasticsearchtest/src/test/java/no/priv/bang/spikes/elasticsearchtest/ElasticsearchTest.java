@@ -29,4 +29,13 @@ public class ElasticsearchTest {
 		node.close();	
 	}
 
+	@Test
+	public void testClientOnly() {
+		// on startup
+		Node node = nodeBuilder().client(true).node();
+		Client client = node.client();
+
+		// on shutdown
+		node.close();	
+	}
 }
