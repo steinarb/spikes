@@ -38,4 +38,14 @@ public class ElasticsearchTest {
 		// on shutdown
 		node.close();	
 	}
+	
+	@Test
+	public void testStartLocalNode() {
+		// on startup
+		Node node = nodeBuilder().local(true).node();
+		Client client = node.client();
+
+		// on shutdown
+		node.close();	
+	}
 }
