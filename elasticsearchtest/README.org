@@ -1,0 +1,4 @@
+* Test application for the Elasticsearch Java API
+
+The purpose of this project is to test the [[http://www.elasticsearch.org/guide/reference/java-api/][Java API of the
+Elasticsearch]] searchengine/NoSQL database.
