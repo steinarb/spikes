@@ -19,7 +19,6 @@ public class TestdataGeneratorMain {
 	 * @param args the arguments given on the command line
 	 */
 	public static void main(String[] args) {
-		System.out.println("Hello elasticsearch world!");
 		TestdataGenerator generator = new TestdataGenerator();
 		JSONArray measurements = generator.generateFakeMeasurements(6000);
 		System.out.println(measurements.toJSONString(JSONStyle.NO_COMPRESS));
