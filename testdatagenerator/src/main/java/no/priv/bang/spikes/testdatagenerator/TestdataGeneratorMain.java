@@ -10,7 +10,7 @@ package no.priv.bang.spikes.testdatagenerator;
  * pump into elasticsearch.
  *
  */
-public class TestdataGenerator {
+public class TestdataGeneratorMain {
 
 	/**
 	 * @param args the arguments given on the command line
