@@ -18,7 +18,7 @@ public class TestdataGenerator {
 
 	private JSONObject generateRandomMeasurement() {
 		JSONObject measurement = new JSONObject();
-		measurement.put("sensorID", 100);
+		measurement.put("sensorID", generateRandomSensorID());
 		JSONObject registration = new JSONObject();
 		registration.put("time", new Timestamp(System.currentTimeMillis()));
 		registration.put("laneID", 4);
@@ -27,6 +27,10 @@ public class TestdataGenerator {
 		registration.put("gap", 434.44);
 		measurement.put("registration", registration);
 		return measurement;
+	}
+
+	private int generateRandomSensorID() {
+		return 100;
 	}
 
 }
