@@ -1,0 +1,15 @@
+* Eclipse workspace containing test projects.
+
+All eclipse projects are m2e projects.  The =pom.xml= in this
+directory is the parent POM of the projects' POMs, but isn't handled
+by eclipse (because it would have to become a project in its own right
+and that would then conflict with having the =.git= directory in the
+parent directory).
+
+** testdatagenerator
+
+A project for generating JSON test objects.
+** elastisearchtest
+
+The purpose of this project is to test the [[http://www.elasticsearch.org/guide/reference/java-api/][Java API of the
+Elasticsearch]] searchengine/NoSQL database.
